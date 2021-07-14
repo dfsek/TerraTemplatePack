@@ -1,5 +1,5 @@
+type: "ORE"
 id: MINERAL
 abstract: true
-type: VANILLA
 replace:
   - "minecraft:stone"

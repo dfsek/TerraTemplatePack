@@ -1,3 +1,4 @@
+type: "ORE"
 id: "GRANITE"
 extends: DEPOSIT
 material: "minecraft:granite"

@@ -1,5 +1,6 @@
+type: "BIOME"
 id: "OCEAN"
-vanilla: OCEAN
+vanilla: "minecraft:ocean"
 extends: BASE
 tags:
   - OCEAN
@@ -10,6 +11,8 @@ palette:
   - SEA_FLOOR: 60
   - "BLOCK:minecraft:bedrock": 0
 
-noise-equation: |
-  -y + 40
-  + simplex(x, z) * 10
+noise:
+  type: EXPRESSION
+  equation: |
+    -y + 40
+    + simplex(x, z) * 10

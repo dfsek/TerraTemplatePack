@@ -1,3 +1,4 @@
+type: "ORE"
 id: "IRON_ORE"
 extends: MINERAL
 material: "minecraft:iron_ore"

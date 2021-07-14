@@ -1,6 +1,7 @@
 # The explanations in this config assume you have read
 # through the plains.yml configuration file.
 
+type: "BIOME"
 id: "BASE"
 
 
@@ -23,7 +24,7 @@ abstract: true
   # or inherit from abstracted objects - or *both*.
 
   # For example biome A can inherit from biome B (abstract),
-  # which then can inherit from biome C (abstract).
+# which then can inherit from biome C (abstract).
 
 
 
@@ -53,3 +54,5 @@ ores:
     max: 1
     min-height: 0
     max-height: 128
+ocean:
+  palette: "BLOCK:minecraft:water"

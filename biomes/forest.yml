@@ -1,8 +1,9 @@
 # The explanations in this config assume you have read
 # through the base.yml configuration file.
 
+type: "BIOME"
 id: "FOREST"
-vanilla: FOREST
+vanilla: "minecraft:forest"
 extends: BASE
 tags:
   - LAND
@@ -14,6 +15,8 @@ palette:
 # TODO: Add explanation for flora
 flora:
   - density: 20
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 1
       - GRASS: 2
@@ -24,6 +27,8 @@ flora:
 # TODO: Add explanation for trees
 trees:
   - density: 2
+    distribution:
+      type: WHITENOISE
     items:
       - OAK_TREE: 1
     y:
@@ -32,9 +37,11 @@ trees:
 
 # TODO: Add explanation for noise functions within noise equations
 #       as well as formatting tricks as shown
-noise-equation: |
-  // Base equation
-  -y + 64
-
-  // 
-  + (simplex(x, z)+1)/2 * 10
+noise:
+  type: EXPRESSION
+  equation: |
+    // Base equation
+    -y + 64
+    
+    //
+    + (simplex(x, z)+1)/2 * 10

@@ -1,3 +1,4 @@
+type: "FLORA"
 id: "GRASS"
 
 layers:
@@ -10,3 +11,6 @@ spawnable:
 
 replaceable:
   - "minecraft:air"
+  
+layer-distribution:
+    type: WHITENOISE

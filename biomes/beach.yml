@@ -1,9 +1,12 @@
+type: "BIOME"
 id: "BEACH"
-vanilla: BEACH
+vanilla: "minecraft:beach"
 extends: BASE
 
 palette:
   - SHORE: 255
   - "BLOCK:minecraft:bedrock": 0
 
-noise-equation: "-y + 64"
+noise:
+  type: EXPRESSION
+  equation: "-y + 64"

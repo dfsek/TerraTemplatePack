@@ -1,6 +1,6 @@
+type: "ORE"
 id: DEPOSIT
 abstract: true
-type: VANILLA
 replace:
   - "minecraft:stone"
 size:
