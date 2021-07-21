@@ -56,3 +56,4 @@ ores:
     max-height: 128
 ocean:
   palette: "BLOCK:minecraft:water"
+  level: 62

@@ -27,13 +27,20 @@ addons:
   - "config-noise-function"
   - "config-ore"
   - "config-palette"
-  - "config-tree"
+  - "config-distributors"
+  - "config-locators"
+  - "config-feature"
   - "structure-terrascript-loader"
   - "language-yaml"
+  - "generation-stage-flora"
+  - "generation-stage-feature"
 
 stages:
-  - "TREE"
+  - "FEATURE"
   - "FLORA"
+
+forest:
+  density: 0.99
 
 noise:
   # The noise key is where you can define your own noise functions

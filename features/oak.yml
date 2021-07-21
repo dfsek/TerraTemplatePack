@@ -1,0 +1,16 @@
+type: FEATURE
+id: "RANDOM_OAK"
+distributor:
+  type: NOISE
+  distribution:
+    type: WHITENOISE
+  threshold: $pack.yml:forest.density
+locator:
+  type: SURFACE
+  range:
+    min: 60
+    max: 68
+structures:
+  distribution:
+    type: CONSTANT
+  structures: "oak_tree"

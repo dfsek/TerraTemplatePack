@@ -4,6 +4,7 @@ id "oak_tree";
 if (check(0,0,0) == "LAND") {
     fail;
 }
+
 // If block below is not land, fail
 if (check(0,-1,0) != "LAND") {
     fail;
@@ -12,7 +13,7 @@ if (check(0,-1,0) != "LAND") {
 //Check if has direct sunlight
 //Samples every Nth block upwards from origin
 num sampleDist = 4;
-for(num i = 0; i <= 255; i = i + sampleDist) {
+for(num i = 0; i < 250; i = i + sampleDist) {
     if (check(0, i, 0) != "AIR") {
         fail;
     }

@@ -25,15 +25,8 @@ flora:
       max: 255
 
 # TODO: Add explanation for trees
-trees:
-  - density: 2
-    distribution:
-      type: WHITENOISE
-    items:
-      - OAK_TREE: 1
-    y:
-      min: 64
-      max: 255
+features:
+  - RANDOM_OAK
 
 # TODO: Add explanation for noise functions within noise equations
 #       as well as formatting tricks as shown
