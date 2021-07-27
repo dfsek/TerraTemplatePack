@@ -1,10 +1,16 @@
 type: FEATURE
 id: "RANDOM_OAK"
 distributor:
-  type: NOISE
-  distribution:
-    type: WHITENOISE
-  threshold: $pack.yml:forest.density
+  type: AND
+  distributors:
+    - type: NOISE
+      distribution:
+        type: WHITE_NOISE
+      threshold: $pack.yml:forest.density
+    - type: NOISE
+      distribution:
+        type: OPEN_SIMPLEX_2
+        threshold: 0.8
 locator:
   type: SURFACE
   range:

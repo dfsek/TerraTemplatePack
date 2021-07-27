@@ -16,4 +16,4 @@ replaceable:
   - "minecraft:air"
 
 layer-distribution:
-  type: WHITENOISE
+  type: WHITE_NOISE

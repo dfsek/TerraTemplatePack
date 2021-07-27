@@ -18,7 +18,7 @@ vanilla: "minecraft:plains"
 flora:
   - density: 20
     distribution:
-      type: WHITENOISE
+      type: WHITE_NOISE
     items:
       - TALL_GRASS: 1
       - GRASS: 2

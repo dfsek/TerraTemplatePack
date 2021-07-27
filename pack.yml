@@ -40,7 +40,7 @@ stages:
   - "FLORA"
 
 forest:
-  density: 0.99
+  density: 0.95
 
 noise:
   # The noise key is where you can define your own noise functions
@@ -55,7 +55,7 @@ noise:
     # explanation of these options, and more
     # under 'Noise Configuration'
     dimensions: 2
-    type: OPENSIMPLEX2
+    type: OPEN_SIMPLEX_2
     frequency: 0.0075
 
 
@@ -132,7 +132,7 @@ biomes:
     noise:
       # The noise configuration that
       # dictates how things get blended
-      type: OPENSIMPLEX2
+      type: OPEN_SIMPLEX_2
       frequency: 0.12
   
   pipeline:
@@ -168,7 +168,7 @@ biomes:
       noise: # The noise configuration that
         # shapes your base image
         dimensions: 2
-        type: OPENSIMPLEX2
+        type: OPEN_SIMPLEX_2
         frequency: 0.04
       
       biomes:
@@ -229,7 +229,7 @@ biomes:
             # that will replace the PLAINS biome.
             # This behaves similarly to how the 'noise: '
             # for the source arranges biomes.
-            type: OPENSIMPLEX2
+            type: OPEN_SIMPLEX_2
             frequency: 0.03
       
       
@@ -286,25 +286,25 @@ biomes:
       - expand:
           type: FRACTAL
           noise:
-            type: WHITENOISE
+            type: WHITE_NOISE
             salt: 1
       - expand:
           type: FRACTAL
           noise:
-            type: WHITENOISE
+            type: WHITE_NOISE
             salt: 2
       - mutate:
           type: SMOOTH
           noise:
-            type: WHITENOISE
+            type: WHITE_NOISE
             salt: 1
       - mutate:
           type: SMOOTH
           noise:
-            type: WHITENOISE
+            type: WHITE_NOISE
             salt: 2
       - mutate:
           type: SMOOTH
           noise:
-            type: WHITENOISE
+            type: WHITE_NOISE
             salt: 3
