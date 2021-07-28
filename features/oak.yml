@@ -12,10 +12,17 @@ distributor:
         type: OPEN_SIMPLEX_2
         threshold: 0.8
 locator:
-  type: SURFACE
+  type: PATTERN
   range:
     min: 60
-    max: 68
+    max: 76
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: -1
 structures:
   distribution:
     type: CONSTANT
